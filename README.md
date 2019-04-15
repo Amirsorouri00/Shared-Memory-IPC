@@ -11,3 +11,6 @@
 
 ## Example Four
 4. https://users.cs.cf.ac.uk/Dave.Marshall/C/node27.html    shmget OK
+
+## Example Five
+5. https://users.cs.cf.ac.uk/Dave.Marshall/C/node27.html    shmctl OK
