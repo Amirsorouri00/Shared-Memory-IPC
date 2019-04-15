@@ -14,3 +14,7 @@
 
 ## Example Five
 5. https://users.cs.cf.ac.uk/Dave.Marshall/C/node27.html    shmctl OK
+
+
+## Example Six
+6. https://users.cs.cf.ac.uk/Dave.Marshall/C/node27.html    shmop(attach+detach) OK
