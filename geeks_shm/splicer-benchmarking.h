@@ -23,8 +23,8 @@
 
 
 
-#define SPLICE_SIZE  1024
-#define K_MULTIPLY   40000 
+#define SPLICE_SIZE  1024*40000
+#define K_MULTIPLY   1
 
 
 #if defined(__i386__)
@@ -221,7 +221,7 @@ void k_generator(char* chars){
     char ch[58] = {};
     random_char_selector(ch);
 
-    for(int i = 0; i < 1024; i++){
+    for(int i = 0; i < SPLICE_SIZE; i++){
         chars[i] = ch[(rand() % 58)];
     }
     return;
@@ -243,11 +243,10 @@ void free_allocator(char** mem){
 }
 
 void fake_data_generator(char** container){
-    char ch[1024] = {};
+    char ch[SPLICE_SIZE] = {};
     for(int i = 0; i < K_MULTIPLY; i++){
         k_generator(ch);
         container[i] = ch;
-        // printf("container[%d]: %s\n", i, container[i]);
     }
 }
 

@@ -16,7 +16,7 @@ int main()
     // shmat to attach to shared memory 
     char *str = (char*) shmat(shmid,(void*)0,0); 
   
-    printf("Data read from memory: %d\n",str[2048]); 
+    printf("Data read from memory: %d\n",str[500000]); 
       
     //detach from shared memory  
     shmdt(str); 
